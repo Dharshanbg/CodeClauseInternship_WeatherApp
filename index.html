@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Weather App</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tips">Weather Tips</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="section">
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter City">
+                <button id="search-btn">Search</button>
+            </div>
+            <div class="weather-info">
+                <div class="location">
+                    <h2 id="city-name"></h2>
+                    <p id="current-date-time"></p>
+                </div>
+                <div class="temp">
+                    <h3 id="temperature"></h3>
+                    <button id="toggle-temp">Switch to °F</button>
+                </div>
+                <div class="condition">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <p id="weather-desc"></p>
+                </div>
+                <div class="extra-info">
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Wind Speed: <span id="wind-speed"></span> m/s</p>
+                    <p>Pressure: <span id="pressure"></span> hPa</p>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h3>5-Day Forecast</h3>
+                <div id="forecast-container"></div>
+            </div>
+
+            <div class="search-history">
+                <h4>Recent Searches</h4>
+                <ul id="history-list"></ul>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About This App</h2>
+            <p>
+                This Weather App provides real-time weather information, using API integration to fetch data from OpenWeatherMap. It includes current temperature, humidity, wind speed, and a 5-day weather forecast. Users can search for weather data by city or automatically detect their current location.
+            </p>
+        </section>
+
+        <section id="tips" class="section">
+            <h2>Weather Safety Tips</h2>
+            <ul>
+                <li>Stay indoors during extreme weather conditions.</li>
+                <li>Keep an emergency kit ready with water, food, and first-aid supplies.</li>
+                <li>Stay updated on weather alerts in your area.</li>
+                <li>During thunderstorms, avoid tall trees and metal objects.</li>
+            </ul>
+        </section>
+
+        <section id="faq" class="section">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="faq">
+                <h3>How does this app work?</h3>
+                <p>The app uses OpenWeatherMap API to fetch real-time weather data based on the city name or your location.</p>
+            </div>
+            <div class="faq">
+                <h3>How accurate is the data?</h3>
+                <p>The data comes from reliable weather forecasting services, but small variations may occur based on your location.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Weather App. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #3498db, #2ecc71);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+    margin-top: 40px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Search Box */
+.search-box {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    width: 30%;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c0392b;
+}
+
+/* Weather Information */
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info h2 {
+    font-size: 2.5em;
+}
+
+#weather-icon {
+    width: 100px;
+}
+
+.extra-info {
+    margin-top: 20px;
+}
+
+/* Forecast Styles */
+.forecast {
+    margin-top: 30px;
+}
+
+#forecast-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Search History */
+.search-history {
+    margin-top: 30px;
+}
+
+#history-list {
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+}
+
+#history-list li {
+    cursor: pointer;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 5px;
+}
+
+#history-list li:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Weather Tips */
+#tips ul {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#tips ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* FAQ */
+.faq {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.faq h3 {
+    font-size: 1.5em;
+    color: #f1c40f;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 60%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2ecc71;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    input[type="text"], form input, form textarea {
+        width: 90%;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
